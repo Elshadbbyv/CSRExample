@@ -1,9 +1,10 @@
 package csr.example.csrexample.service.impl;
 
-;
+
 import csr.example.csrexample.dao.entity.CardEntity;
 import csr.example.csrexample.dao.repository.CardRepository;
-import csr.example.csrexample.dto.CardDto;
+
+import csr.example.csrexample.model.CardDto;
 import csr.example.csrexample.service.CardService;
 import org.springframework.stereotype.Service;
 

@@ -2,6 +2,7 @@ package csr.example.csrexample.dao.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -10,7 +11,7 @@ import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.List;
 
-@Data
+@Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -47,7 +48,7 @@ public class PersonEntity {
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinTable(name = "person_images", schema = "group_j4",
             joinColumns = @JoinColumn(name = "person_id", referencedColumnName = "p_id"),
-            inverseJoinColumns = @JoinColumn(name = "image_id", referencedColumnName = "id"))
+            inverseJoinColumns = @JoinColumn(name = "image_id", referencedColumnName = "p_id"))
     private List<ImageEntity> images;
 
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)

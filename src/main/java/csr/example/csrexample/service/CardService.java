@@ -1,6 +1,7 @@
 package csr.example.csrexample.service;
 
-import csr.example.csrexample.dto.CardDto;
+
+import csr.example.csrexample.model.CardDto;
 
 import java.util.List;
 

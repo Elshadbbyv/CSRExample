@@ -1,6 +1,7 @@
 package csr.example.csrexample.controller;
 
-import csr.example.csrexample.dto.CardDto;
+
+import csr.example.csrexample.model.CardDto;
 import csr.example.csrexample.service.CardService;
 import org.springframework.web.bind.annotation.*;
 
